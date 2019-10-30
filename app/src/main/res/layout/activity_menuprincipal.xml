@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context="com.virual.entornosvirtuales.Menuprincipal">
+
+
+    <EditText
+        android:id="@+id/userIncio"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/userpass"
+        android:layout_alignLeft="@+id/userpass"
+        android:layout_alignRight="@+id/userpass"
+        android:layout_alignStart="@+id/userpass"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:hint="User " />
+
+    <Button
+        android:id="@+id/iniciarlg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="65dp"
+
+        android:text="INICIAR" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/textView"
+        android:layout_toEndOf="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView4"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/userpass"
+        android:layout_alignTop="@+id/userIncio"
+        android:layout_toLeftOf="@+id/userIncio"
+        android:layout_toStartOf="@+id/userIncio"
+        android:src="@drawable/per" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/userpass"
+        android:layout_below="@+id/userIncio"
+        android:layout_toLeftOf="@+id/userpass"
+        android:layout_toStartOf="@+id/userpass"
+        android:src="@drawable/pass"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/userIncio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Escuela  de Postgrado"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/userpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userIncio"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="contaseña"
+        android:inputType="numberPassword" />
+
+
+</RelativeLayout>
